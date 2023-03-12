@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <figure>
+          <figcaption class="content__title">Cat-quistadourus Rex</figcaption>
+          <img
+            src="public/images/pict.jpg"
+            alt="post image"
+            class="content__image"
+          />
+        </figure>
+        <p class="content__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+          veritatis? Animi officia dolorum corporis at harum eum ipsum, velit
+          assumenda omnis amet perspiciatis neque sunt, ex sint, doloremque quos
+          culpa. Voluptatibus, amet aperiam. Facilis, id reiciendis omnis saepe
+          provident voluptatem sapiente earum dolor? Corrupti et aperiam modi
+          hic non dolores sit repudiandae velit id. Optio exercitationem eveniet
+          numquam neque odio!
+        </p>
+        <div class="action-block">
+          <div class="action-block__item action-block__item_comments">
+            <span class="action-block__count"></span>
+            <button class="action-block__button comment-creator-opener">
+              <i
+                class="fa-regular fa-comment fa-2xl content__letComment-button"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="comments"></div>
+
+      <form class="comment-creator">
+        <label class="comment-creator__input-wrapper">
+          <input
+            placeholder="Введите имя"
+            type="text"
+            name="name"
+            class="comment-creator__input comment-creator__input_name"
+          />
+          <span class="comment-creator__warning comment-creator__warning_name"
+            >Поле не может быть пустым</span
+          >
+        </label>
+        <label class="comment-creator__input-wrapper">
+          <input
+            placeholder="дд.мм.гггг"
+            type="text"
+            name="date"
+            class="comment-creator__input comment-creator__input_date"
+          />
+          <span class="comment-creator__warning comment-creator__warning_date"
+            >Неверный формат даты</span
+          >
+        </label>
+        <label class="comment-creator__input-wrapper">
+          <input
+            placeholder="Ваш коментарий..."
+            name="text"
+            class="comment-creator__input comment-creator__input_text"
+          />
+        </label>
+
+        <button type="submit" name="button" class="comment-creator__button">
+          Создать комментарий
+        </button>
+      </form>
+    </div>
+    <div class="modal-background"></div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e5922e4f18.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

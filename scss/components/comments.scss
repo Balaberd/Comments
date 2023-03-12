@@ -1,0 +1,33 @@
+.comments {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-item {
+  @extend %template-block;
+
+  &__title-block {
+    margin-bottom: 10px;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__author {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  &__date {
+    opacity: 0.8;
+  }
+
+  .action-block {
+    margin-top: 8px;
+  }
+  .action-block__count {
+    font-size: 20px;
+  }
+}

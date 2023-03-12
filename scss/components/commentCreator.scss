@@ -1,0 +1,58 @@
+.comment-creator {
+  @extend %template-block;
+
+  width: 600px;
+  height: 300px;
+
+  position: fixed;
+  top: calc(50% - 200px);
+  left: calc(50% - 300px);
+
+  z-index: 10;
+  display: none;
+
+  @media (max-width: 620px) {
+    width: 90%;
+    left: 5%;
+  }
+
+  &_visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__input-wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    width: 90%;
+    background-color: $color-gray;
+    border-radius: 10px;
+    min-height: 40px;
+    padding: 5px 10px 5px 15px;
+
+    font-family: "Shantell Sans", cursive;
+    font-weight: 700;
+  }
+
+  &__button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: $color-purple;
+    color: $color-light;
+    font-family: "Shantell Sans", cursive;
+  }
+
+  &__warning {
+    color: $color-warning;
+    display: none;
+    &_visible {
+      display: block;
+    }
+  }
+}

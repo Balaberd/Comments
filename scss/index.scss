@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;700&display=swap");
+
+@import "variables.scss";
+@import "templates.scss";
+
+@import "./components/content.scss";
+@import "./components/actionBlock.scss";
+@import "./components/comments.scss";
+@import "./components/commentCreator.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-gray;
+
+  font-family: "Shantell Sans", cursive;
+  font-weight: 400;
+}
+
+.container {
+  width: 860px;
+  margin: 0 auto;
+
+  @media (max-width: 870px) {
+    width: 95%;
+  }
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.5;
+
+  display: none;
+  &_visible {
+    display: block;
+  }
+}

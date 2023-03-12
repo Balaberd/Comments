@@ -1,0 +1,28 @@
+.action-block {
+  height: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &__count {
+    font-weight: 700;
+    font-size: 24px;
+    align-items: center;
+    vertical-align: middle;
+  }
+  &__button_delete {
+    color: $color-warning;
+  }
+  &__button_active {
+    color: $color-warning;
+  }
+}
